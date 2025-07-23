@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
+
+* {
+    font-family: 'raleway', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #33A8DB;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+p {
+    color: white;
+}
+section {
+    margin: 100px auto;
+}
+
+.banner {
+    background-image:     /* Aplica um gradiente linear com camadas escuras e azul semi-transparente */ 
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),    /* escurece o topo */
+            rgba(49, 168, 221, 0.2), /* azul semi-transparente ao centro */
+            rgba(0, 0, 0, 0.6)      /* escurece a parte inferior */
+        ),
+        url('../assets/images/banner.png'); /* imagem de fundo */  
+        background-size: cover; /* Faz a imagem de fundo cobrir toda a área do elemento */
+        background-repeat: no-repeat;     /* Impede que a imagem de fundo se repita */
+        height: 600px;     /* Define a altura do banner como 600 pixels */
+        padding-top: 60px;     /* Adiciona um espaçamento interno no topo de 60 pixels */  
+        border-bottom: 1px solid #33A8DB80; /* Cria uma borda inferior azul semi-transparente */
+}
+
+.banner .banner-content {
+    color: white;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    font-weight: 900; /* Define a espessura da fonte como ultra-negrito para dar destaque */
+    text-transform: uppercase;
+    color: transparent; /* Torna a cor do texto transparente para exibir apenas o gradiente */
+    background: -webkit-linear-gradient(#33A8DB, #1472B7); /* Aplica um gradiente linear vertical de azul claro (#33A8DB) para azul escuro (#1472B7) no fundo do texto */
+    background-clip: text; /* Faz o fundo se aplicar apenas à área do texto */
+    -webkit-background-clip: text; /* Versão para navegadores baseados em Webkit (Chrome, Safari) garantindo compatibilidade do background clip */
+}
+
+.banner p {
+    font-size: 1.25rem;
+    margin: 16px 0 24px; /* Define margens externas: 16px em cima, 0 nas laterais, 24px embaixo */
+}
+.banner .logo {
+    background-color: rgba(0, 0, 0, .2);
+    height: 260px;
+    width: 260px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.banner .logo img {
+    margin: auto; /* Centraliza horizontalmente a imagem dentro do contêiner flexível ou usando block com width definido */
+    width: 100%; /* Faz a largura da imagem ocupar 100% do contêiner pai */
+    height: 100%; /* Faz a altura da imagem ocupar 100% do contêiner pai */
+    object-fit: contain; /* Garante que a imagem se ajuste dentro do contêiner mantendo sua proporção, sem cortar, podendo deixar áreas vazias caso as proporções não coincidam */
+}
+
+.banner .banner-content button {
+    color: #31A8DD;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    letter-spacing: 4px; /* Espaçamento entre letras */
+    background-color: transparent;
+    border: 4px solid; /* Define borda sólida necessária para border-image */
+    border-image: linear-gradient(#3BA1CD, #1572B7); /* Gradiente nas bordas */
+    border-image-slice: 10; /* Ajuste do preenchimento da borda */
+    border-radius: 30px;
+}
+
+#course-content {
+   width: 800px;
+    text-align: center;
+}
+
+#course-content .modules-list {
+   margin: 24px 0;
+}
+
+#course-content .modules-list .module {
+    color: white; /* Cor do texto branca */
+    width: 530px; /* Largura fixa */
+    margin: 0 auto 24px; /* Centralização e espaçamento entre módulos */
+    border: 1px solid #33A8DB; /* Borda azul */
+    background-color: #252525; /* Fundo cinza escuro */
+    padding: 16px; /* Espaçamento interno */
+    border-radius: 100px; /* Bordas arredondadas estilo pílula */
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, 0.3); /* Sombra interna com leve opacidade */
+}
+
+#course-content .modules-list .module span {
+     color: #33A8DB;
+}
+
+#transform-world {
+    height: 500px; /* Define a altura fixa de 500 pixels para o elemento */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a área do elemento, sem repetição */
+    background-image: url(images/woman-code.png);/* Define a imagem de fundo utilizando o caminho relativo especificado */
+    background-attachment: fixed; /* Fixa a imagem de fundo enquanto o conteúdo se move durante o scroll */
+    border-top: 1px solid #33A8DB80; /* Adiciona uma borda superior de 1px com a cor #33A8DB com 50% de opacidade (80 em hex) */
+    border-bottom: 1px solid #33A8DB80; /* Adiciona uma borda inferior de 1px com a mesma cor e opacidade */
+    padding: 200px;/* Adiciona um padding (espaçamento interno) de 200px em todos os lados do elemento */
+}
+
+#transform-world p {
+    font-weight: 900; /* Define o peso da fonte como 900 (extremamente negrito) para o parágrafo dentro do elemento com id "transform-world" */
+    font-size: 2.5rem;/* Define o tamanho da fonte como 2.5rem (2.5 vezes o tamanho base do elemento raiz) */
+    text-transform: lowercase; /* Transforma todo o texto em minúsculas */
+    max-width: 250px; /* Define a largura máxima do parágrafo em 250 pixels, limitando a largura do texto */
+    text-shadow: 3px 2px #33A8DB; /* Adiciona uma sombra ao texto com deslocamento de 3px à direita, 2px para baixo e a cor */
+}
+
+#professional-challenges {
+    text-align: center;
+    width: 800px;
+}
+
+#professional-challenges img {
+    margin: 32px 0;
+}
+footer {
+    padding: 60px 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(50, 168, 219, .0), rgba(50, 168, 219, .2));
+    border-top: 1px solid #33A8DB80;
+}
+
+footer .dio-logo {
+    width: 300px;
+}
+
+footer a {
+    color: #33A8DB;
+    font-weight: bold;
+    text-decoration: none;
+}
+

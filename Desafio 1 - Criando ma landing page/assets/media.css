@@ -1,0 +1,57 @@
+/* Responsividade para telas com largura máxima de 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    body {
+        padding: 0 16px; /* Adiciona padding lateral para evitar colagem nas bordas */
+    }
+
+    .banner {
+        height: auto; /* Permite altura flexível no banner */
+        padding-top: 40px; /* Reduz padding no topo */
+    }
+
+    .banner .banner-content {
+        width: 100%; /* Ocupa toda a largura disponível */
+    }
+
+    .banner h1 {
+        font-size: 1.5rem; /* Reduz o tamanho do título */
+    }
+
+    .banner p {
+        font-size: 1rem; /* Reduz o tamanho do texto */
+    }
+
+    .banner .logo {
+        height: 180px; /* Reduz altura do logo */
+        width: 180px;  /* Reduz largura do logo */
+    }
+
+    #course-content {
+        width: 100%; /* Usa toda a largura da tela */
+    }
+
+    #course-content .modules-list .module {
+        width: 100%; /* Usa toda a largura disponível */
+        border-radius: 20px; /* Reduz o raio para caber melhor em telas menores */
+    }
+
+    #transform-world {
+        padding: 60px 16px; /* Reduz padding e adiciona espaçamento lateral */
+        height: auto; /* Permite altura flexível */
+        background-attachment: fixed; /* Evita bugs de fundo fixo em mobile */
+    }
+
+    #transform-world p {
+        font-size: 1.5rem; /* Reduz tamanho do texto */
+        max-width: 100%; /* Permite uso total da largura */
+        text-align: center; /* Centraliza texto */
+    }
+
+    #professional-challenges {
+        width: 100%; /* Usa toda a largura */
+    }
+
+    footer .dio-logo {
+        width: 200px; /* Ajusta tamanho da logo no rodapé */
+    }
+}
